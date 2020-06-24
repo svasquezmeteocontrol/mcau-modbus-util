@@ -8,7 +8,7 @@ public class Modbus64BitsDecoder {
 
 	public static byte[] decodeResponse(ByteBuf byteBuf) {
 
-		byte[] swappingBuffer = new byte[4];
+		byte[] swappingBuffer = new byte[8];
 
 		swappingBuffer[0] = byteBuf.getByte(6);
 		swappingBuffer[1] = byteBuf.getByte(7);
