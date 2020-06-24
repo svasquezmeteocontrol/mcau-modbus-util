@@ -19,7 +19,7 @@ public class Modbus64BitsEncoder {
 		return encoded;
 	}
 
-	public static byte[] encodeDoubletRequest(float toEncode) {
+	public static byte[] encodeDoubleRequest(float toEncode) {
 		return encodeRequest(ByteBuffer.allocate(8).putDouble(toEncode).array());
 	}
 

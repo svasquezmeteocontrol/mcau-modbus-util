@@ -22,12 +22,12 @@ public class Modbus64BitsDecoder {
 		return swappingBuffer;
 	}
 
-	public static double getDoubletFromRegisterResponse(ByteBuf byteBuf) {
+	public static double getDoubleFromRegisterResponse(ByteBuf byteBuf) {
 
 		return ByteBuffer.wrap(decodeResponse(byteBuf)).getDouble();
 	}
 
-	public static long getIntFromRegisterResponse(ByteBuf byteBuf) {
+	public static long getLongFromRegisterResponse(ByteBuf byteBuf) {
 
 		return ByteBuffer.wrap(decodeResponse(byteBuf)).getLong();
 	}
