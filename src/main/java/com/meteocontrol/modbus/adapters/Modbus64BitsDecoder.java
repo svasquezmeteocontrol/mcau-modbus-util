@@ -18,6 +18,8 @@ public class Modbus64BitsDecoder {
 		swappingBuffer[5] = byteBuf.getByte(3);
 		swappingBuffer[6] = byteBuf.getByte(0);
 		swappingBuffer[7] = byteBuf.getByte(1);
+		
+		byteBuf.release();
 
 		return swappingBuffer;
 	}

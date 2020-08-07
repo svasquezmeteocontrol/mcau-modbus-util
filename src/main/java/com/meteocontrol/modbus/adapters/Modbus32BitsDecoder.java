@@ -24,6 +24,8 @@ public class Modbus32BitsDecoder {
 		swappingBuffer[1] = byteBuf.getByte(3);
 		swappingBuffer[2] = byteBuf.getByte(0);
 		swappingBuffer[3] = byteBuf.getByte(1);
+		
+		byteBuf.release();
 
 		return swappingBuffer;
 	}
